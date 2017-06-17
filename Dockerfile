@@ -1,5 +1,5 @@
 # Base image
-FROM hypriot/rpi-alpine
+FROM armhf/alpine
 
 # Set environment variables for version control
 ENV NGINX_VERSION 1.13.1
