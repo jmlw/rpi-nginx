@@ -7,7 +7,7 @@ ENV NGINX_DOWNLOAD_URL https://nginx.org/download/nginx-1.13.1.tar.gz
 ENV NGINX_DOWNLOAD_SHA1 7871175f653418b838ab71091318d517da96a64b
 
 # Add the user and groups appropriately
-RUN addgroup -S nginx && adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx
+RUN addgroup -S nginx; adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx
 
 # Build
 RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
